@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../build/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50">
+    <div class="bg-green-800 text-gray-200 hover:text-white">
+      <p class="flex flex-row text-center">
+        <span class="flex-grow">
+          Open your account here to get cashback up to 10%.
+          <a href="#" class="underline">Learn How</a>
+        </span>
+        <span class="px-2 text-lg cursor-pointer">&times;</span>
+      </p>
+    </div>
+    <nav class="bg-white shadow-lg rounded-lg m-8">
+      <div class="mx-auto px-10 py-2">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+            <div>
+              <!-- Brand logo -->
+              <a href="#" class="flex items-center py-4 px-2">
+                <span class="font-semibold text-gray-500 text-lg">Brand Logo</span>
+              </a>
+            </div>
+          </div>
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Service</a>
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Why Us</a>
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Testimonial</a>
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">FAQ</a>
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+          </div>
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a href="#" class="py-2 px-5 font-medium text-gray-500 rounded-3xl hover:bg-green-500 hover:text-white transition duration-300 border border-gray-200">Log In</a>
+            <a href="#" class="py-2 px-5 font-medium text-white bg-green-500 rounded-3xl hover:bg-green-400 transition duration-300">Sign Up</a>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class="w-4 h-4 text-gray-500 hover:text-green-500"
+                   x-show="!showMenu"
+                   fill="none"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   stroke-width="2"
+                   viewBox="0 0 24 24"
+                   stroke="currentColor"
+                   >
+                   <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li><a href="#" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Why us</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Testimonial</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">FAQ</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Log In</a></li>
+          <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <div class="container mx-auto px-4 py-12 max-w-7xl">
+      <div class="flex flex-col md:flex-row items-center gap-x-8">
+        <!-- Left column -->
+        <div class="lg:w-1/2 mb-8 md:mb-0">
+          <div class="flex flex-row align-middle mb-2 md:mb-4">
+            <div class="h-5 w-1 bg-green-500 mr-2"></div>
+            <p class="text-sm font-semibold text-green-500 uppercase">The Marketing Toolkit</p>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 capitalize">Master proven strategies that drive real results</h1>
+          <p class="text-xl text-gray-600 mb-6">Unleash the power of strategic marketing with our comprehensive course, designed to empower you with the skills and knowledge necessary to navigate the dynamic landscape of modern business.</p>
+          <button class="bg-green-500 text-white py-3 px-6 rounded-3xl hover:bg-green-400 transition duration-300">Enroll Now &gt;</button>
+
+          <div class="mt-8">
+            <ul class="space-y-2 flex flex-wrap gap-x-4 gap-y-2">
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 capitalize">Money back guarantee</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Scalable Growth Tools</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Access to members only community</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right column (image) -->
+        <div class="hidden md:block lg:w-1/2">
+          <img src="../images/undraw_Bibliophile_re_xarc.png" alt="Hero Image" class="w-full max-w-md mx-auto" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 my-12">
+      <p class="capitalize font-bold text-xl mb-8">What they say about us</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-100 rounded-lg shadow">
+          <div class="flex items-center py-4">
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+          </div>
+          <p class="my-4">This course changed by entire concept regarding landing pages. But I wanted to write more so I added a wall of text. Hence when you see this page, this particular review box should be bigger than the ones to the left and right of this in particular. Though they all start at the same height, the bottom of this one should be longer than the others.</p>
+          <p class="my-4 font-bold">Young Lisa</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow">
+          <div class="flex items-center py-4">
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+          </div>
+          <p class="my-4">This course changed by entire concept regarding landing pages. But I wanted to write more so I added a wall of text. Hence when you see this page, this particular review box should be bigger than the ones to the left and right of this in particular.</p>
+          <p class="my-4 font-bold">Young Lisa</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow">
+          <div class="flex items-center py-4">
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.29a1 1 0 00.95.69h5.518c.969 0 1.371 1.24.588 1.81l-4.458 3.24a1 1 0 00-.364 1.118l1.715 5.29c.3.921-.755 1.688-1.54 1.118l-4.458-3.24a1 1 0 00-1.175 0l-4.458 3.24c-.784.57-1.839-.197-1.54-1.118l1.715-5.29a1 1 0 00-.364-1.118l-4.458-3.24c-.784-.57-.38-1.81.588-1.81h5.518a1 1 0 00.95-.69l1.715-5.29z"></path>
+            </svg>
+          </div>
+          <p class="my-4">This course changed by entire concept regarding landing pages</p>
+          <p class="my-4 font-bold">Young Lisa</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:block m-0 bg-green-600 my-12 p-12">
+      <p class="text-center text-white text-xl">Featured in:</p>
+      <div class="mx-auto flex flex-row items-center justify-between mt-8">
+        <img src="../images/logoipsum-297.svg" alt="company logo" class="max-w-sm" width="100px" height="60px">
+        <img src="../images/logoipsum-311.svg" alt="company logo" class="max-w-sm" width="100px" height="60px">
+        <img src="../images/logoipsum-321.svg" alt="company logo" class="max-w-sm" width="100px" height="60px">
+        <img src="../images/logoipsum-330.svg" alt="company logo" class="max-w-sm" width="100px" height="60px">
+        <img src="../images/logoipsum-331.svg" alt="company logo" class="max-w-sm" width="100px" height="60px">
+      </div>
+    </div>
+
+    <div class="container mx-auto lg:grid lg:grid-cols-2 lg:gap-6 my-12 p-12">
+      <div class="my-12">
+        <img src="../images/undraw_online_learning_re_qw08.svg" alt="Online Learning" class="max-w-lg mx-auto" width="600px" height="600px">
+      </div>
+      <div class="my-12">
+        <div class="flex flex-row align-middle mb-2 md:mb-4">
+          <div class="h-5 w-1 bg-green-500 mr-2"></div>
+          <p class="text-sm font-semibold text-green-500 uppercase">About the Course</p>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 capitalize">Journey into marketing: Unveiling the marketing Toolkit</h1>
+        <p class="text-xl text-gray-600 mb-6">Welcome to the marketing toolkit, you ultimate guide to master modern business and marketing strategies</p>
+        <button class="bg-green-500 text-white py-3 px-6 rounded-3xl hover:bg-green-400 transition duration-300">Enoroll Now &gt;</button>
+
+        <div class="mx-auto grid grid-cols-2 gap-4 my-8">
+          <div>
+            <p class="h-14 font-bold capitalize my-4">Premium Resources</p>
+            <p class="my-4">Gain exclusive access to treasure trove of premium resources handpicked by industry experts.</p>
+            <a href="#" class="text-green-500 underline my-4">Download Now</a>
+          </div>
+          <div>
+            <p class="h-14 font-bold capitalize my-4">Training Materials included</p>
+            <p class="my-4">Enjoy comprehensive learning with all-inclusive training materials provided.</p>
+            <a href="#" class="text-green-500 underline my-4">Download Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 m-0 py-8">
+      <div class="container mx-auto my-12 p-12">
+        <div class="flex flex-row align-middle mb-2 md:mb-4">
+          <div class="h-5 w-1 bg-green-500 mr-2"></div>
+          <p class="text-sm font-semibold text-green-500 uppercase">Course Summary</p>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 capitalize">Navigating the marketing landscape: Your Roadmap to Success</h1>
+        <div class="grid md:grid-cols-8 md:gap-x-6 sm:grid-cols-12 mt-12">
+          <div class="rounded-lg bg-green-800 px-6 py-12 md:col-span-6 text-white">
+            <div class="grid grid-cols-12 gap-x-4 h-96">
+              <div class="col-span-1 px-6 text-center font-bold border-r border-gray-300 flex flex-col items-center">
+                <span>01</span>
+                <span class="transform -rotate-90 flex flex-grow items-center w-max mt-36">Fundamentals of marketing</span>
+              </div>
+              <div class="col-span-11 lg:col-span-6 flex flex-col px-4 ml-4">
+                <h1 class="text-white font-bold h-14 mb-4">Fundamentals of Marketing</h1>
+                <p class="text-white my-4">Delve into the foundational pillars of marketing, where you will explore the core principles
+                that underpin the successful marketing strategies</p>
+                <div class="mt-auto w-auto my-4">
+                  <a href="#" class="py-2 px-5 font-medium text-white bg-green-500 rounded-3xl hover:bg-green-400 transition duration-300">Sign Up</a>
+                </div>
+              </div>
+              <div class="collapse lg:block lg:col-span-5">
+                <img src="../images/undraw_Programmer_re_owql.png" alt="Laptop Online Learning" class="max-w-sm mx-auto rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="collapse md:visible col-span-1 px-6 py-12 rounded-lg bg-green-500/10 text-center text-green-500 font-bold flex flex-col items-center">
+            <span>02</span>
+            <span class="transform -rotate-90 flex flex-grow items-center w-max mt-36">Digital Marketing Essentials</span>
+          </div>
+          <div class="collapse md:visible col-span-1 px-6 py-12 rounded-lg bg-green-500/10 text-center text-green-500 font-bold flex flex-col items-center">
+            <span>03</span>
+            <span class="transform -rotate-90 flex flex-grow items-center w-max mt-36">Data Analaytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sm:flex sm:flex-col-reverse mx-auto lg:grid lg:grid-cols-2 lg:gap-6 my-12 p-12">
+      <div class="my-12">
+        <div class="flex flex-row align-middle mb-2 md:mb-4">
+          <div class="h-5 w-1 bg-green-500 mr-2"></div>
+          <p class="text-sm font-semibold text-green-500 uppercase">What you will learn</p>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 capitalize">Empower your skills: Unveiling the profinciencies you will master</h1>
+        <p class="text-xl text-gray-600 mb-6">By the end of this course, you will be able to:</p>
+
+        <div class="mt-8">
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-700 capitalize">Develop a comprehensive marketing strategy</span>
+            </li>
+            <li class="flex items-center">
+              <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-700">Utilize various digital marketing channels effectively</span>
+            </li>
+            <li class="flex items-center">
+              <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-700">Analyze and interpret marketing data for informed decisions</span>
+            </li>
+            <li class="flex items-center">
+              <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-700">Optimize campaigns for maximum impact</span>
+            </li>
+            <li class="flex items-center">
+              <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="text-gray-700">Implement advanced marketing tactics to stay ahead</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src="../images/undraw_growing_re_olpi.svg" alt="Online Learning" class="max-w-lg mx-auto my-auto" width="600px" height="600px">
+      </div>
+    </div>
+
+    <div class="m-0 bg-green-600 my-8">
+      <div class="container p-6 mx-auto md:grid md:grid-cols-2 gap-x-4">
+        <h1 class="text-5xl text-white font-bold my-auto">Ready to supercharge your marketing skills?</h1>
+        <div class="flex flex-col justify-between">
+          <p class="text-white my-4">Out open positive and proactive approach is really tiring at this point because I am taking too long to type out this copyright. I should probably copy paste lorem ipsum.  But we're nearly done anyway</p>
+          <div class="my-4">
+            <a href="#" class="bg-white hover:bg-gray-100 rounded-3xl text-green-500 px-12 py-4">Get starterd now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto my-12 p-12">
+      <div class="flex flex-row align-middle mb-2 md:mb-4">
+        <div class="h-5 w-1 bg-green-500 mr-2"></div>
+        <p class="text-sm font-semibold text-green-500 uppercase">Pricing</p>
+      </div>
+      <h1 class="text-4xl md:w-1/2 font-bold text-gray-900 mb-4 capitalize">Choose the pricing that works best for you</h1>
+      <div class="md:grid md:grid-cols-2 gap-x-4 my-12">
+        <div class="bg-gray-100 p-12 rounded-lg my-12">
+          <h1 class="text-3xl font-bold">Monthly Subscription</h1>
+          <p class="py-4">Someting something buy monthly</p>
+          <p class="py-4">
+            <span class="text-3xl font-bold">$49</span>
+            <span class="text-xl">/ Month</span>
+          </p>
+          <div class="block my-4">
+            <a href="#" class="py-3 px-5 font-medium text-white bg-green-500 rounded-3xl hover:bg-green-400 transition duration-300">Enroll Now</a>
+          </div>
+          <div class="mt-8">
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 capitalize">Develop a comprehensive marketing strategy</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Utilize various digital marketing channels effectively</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Analyze and interpret marketing data for informed decisions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-12 rounded-lg">
+          <h1 class="text-3xl font-bold">Monthly Subscription</h1>
+          <p class="py-4">Someting something buy monthly</p>
+          <p class="py-4">
+            <span class="text-3xl font-bold">$49</span>
+            <span class="text-xl">/ Month</span>
+          </p>
+          <div class="block my-4">
+            <a href="#" class="py-3 px-5 font-medium text-white bg-green-500 rounded-3xl hover:bg-green-400 transition duration-300">Enroll Now</a>
+          </div>
+          <div class="mt-8">
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700 capitalize">Develop a comprehensive marketing strategy</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Utilize various digital marketing channels effectively</span>
+              </li>
+              <li class="flex items-center">
+                <div class="rounded-full p-1 mr-3 border-2 border-green-500">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Analyze and interpret marketing data for informed decisions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
