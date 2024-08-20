@@ -17,11 +17,11 @@ This project is a simple web application built using Tailwind CSS. It demonstrat
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/manu29d/fmdd-test-html.git
+   cd fmdd-test-html
    ```
 
-2. Install dependencies:
+2. Install dependencies (optional, for running dev script):
    ```
    npm install
    ```
@@ -34,7 +34,7 @@ To start the development server and watch for changes:
 npm run dev
 ```
 
-This command will watch for changes in your HTML and CSS files, and automatically rebuild the project.
+This command will watch for changes in your HTML and CSS files, and automatically rebuild the css file.
 
 ## Deployment
 
