@@ -2,6 +2,8 @@
 
 This project is a simple web application built using Tailwind CSS. It demonstrates the usage of Tailwind's utility-first CSS framework to create responsive and customizable user interfaces.
 
+Demo: https://manu29d.github.io/fmdd-test-html/
+
 ## Project Structure
 
 - `src/index.html`: Main HTML file
