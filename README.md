@@ -6,8 +6,8 @@ Demo: https://manu29d.github.io/fmdd-test-html/
 
 ## Project Structure
 
-- `src/index.html`: Main HTML file
-- `build/output.css`: Compiled CSS file
+- `index.html`: Main HTML file
+- `output.css`: Compiled CSS file
 - `images/`: Folder containing project images
 
 ## Prerequisites (tested on)
@@ -40,4 +40,4 @@ This command will watch for changes in your HTML and CSS files, and automaticall
 
 ## Deployment
 
-To deploy this project, you can use any static site hosting service. Simply upload the contents of the project directory, ensuring that `index.html`, `build/output.css`, and the `images/` folder are included.
+To deploy this project, you can use any static site hosting service. Simply upload the contents of the project directory, ensuring that `index.html`, `output.css`, and the `images/` folder are included.
